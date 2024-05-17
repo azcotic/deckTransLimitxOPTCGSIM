@@ -1,4 +1,4 @@
-const exampleJavaScriptFn = () => {
+/* const exampleJavaScriptFn = () => {
   console.log('hello!');
-}
+} */
 

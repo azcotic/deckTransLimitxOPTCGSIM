@@ -4,6 +4,10 @@ body {
   color: rgb(214, 214, 214);
   max-width: 900px;
   margin: 0 auto;
+  font-size:28px;
+}
+body, html, input, button,textarea,select {
+  font-size:28px;
 }
 
 #root {

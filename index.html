@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="shortcut icon" href="./favicon.png" />
+        
         <meta name="theme-color" content="#000000" />
         <title>Simple Boilerplate</title>
         <link rel="stylesheet" type="text/css" href="src/css/index.css">
@@ -11,32 +11,45 @@
     <body>
         <!-- Add your site or application content here -->
         <div id="root">
-            <img src="src/assets/simple-boilerplate-logo@3x.png" class="logo" alt="logo" />
-            <h1>Welcome to Simple Boilerplate!</h1>
-            <p>
-                This boilerplate is ready for HTML/CSS, Javascript, and JQuery projects. 
-                It includes a live server that lets you see HTML/JS/CSS changes with every save.
-            </p>
-            
-            <p id="subtext">
-                An Example JavaScript Hook.
-            </p>
+            <select style="margin-bottom: 10px;" id="format">
+                <option value="limitless">Formato Limitless One Piece</option>
+            </select>
+            <label for="deck-list" style="display: block; margin-bottom: 5px;">Ingresa la lista en el formato seleccionado</label>
+            <textarea id="decklist" placeholder="Ingresa la lista en el formato seleccionado 
+Leader
+1 Monkey.D.Luffy (ST08-001)
 
-            <h2>Instructions:</h2>
-            <p>
-                To see live changes, please go to the root folder ('simple-boilerplate/')
-                and run "npm start".
-            </p>
-            <p>
-                To start coding, start changing the files within src/css and src/js. 
-                Images can be stored in src/assets.
-            </p>
-        </div>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-        <!-- ================================ -->
-        <!-- Add more JavaScript files here!! -->
-        <!-- ================================ -->
-        <script type="text/javascript" src="src/js/other.js"></script>
-        <script type="text/javascript" src="src/js/index.js"></script>
-    </body>
+Character (44)
+2 Uta (ST08-002)
+4 Gaimon (ST08-003)
+4 Koby (ST08-004)
+2 Shanks (ST08-005)
+4 Shirahoshi (ST08-006)
+4 Nefeltari Vivi (ST08-007)
+4 Higuma (ST08-008)
+4 Makino (ST08-009)
+4 Monkey.D.Garp (ST08-010)
+4 Monkey.D.Luffy (ST08-011)
+4 Laboon (ST08-012)
+4 Mr.2.Bon.Kurei(Bentham) (ST08-013)
+
+Event (6)
+4 Gum-Gum Bell (ST08-014)
+2 Gum-Gum Pistol (ST08-015)" style="width: 100%; height: 200px;"></textarea>
+<button id="submit-button" style="float: right;">Enviar</button>
+<button style="float: left;">Borrar</button>
+<textarea id="result" style="display: none; width: 100%; height: 200px;" >
+
+</textarea>
+<button id="copy-button" style="float: right;">Copy to clipboard</button>
+
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<!-- ================================ -->
+<!-- Add more JavaScript files here!! -->
+<!-- ================================ -->
+<script type="text/javascript" src="src/js/index.js"></script>
+<!-- <script type="text/javascript" src="src/js/other.js"></script>
+ -->
+</body>
 </html>
