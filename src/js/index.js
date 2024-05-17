@@ -17,6 +17,17 @@ document.getElementById('submit-button').addEventListener('click', function() {
  
 });
 
+document.getElementById('delete-button').addEventListener('click', function() {
+  //Delete the content of the two textareas and hide the copy button
+  //and hide the second textarea
+  document.getElementById('decklist').value = '';
+  document.getElementById('result').value = '';
+  document.getElementById('copy-button').style.display = 'none';
+  document.getElementById('result').style.display = 'none';
+  
+ 
+});
+
 //add function that listen to click events of the element id="copy-button"
 //and copy the value of the element id="result"
 //into the clipboard
